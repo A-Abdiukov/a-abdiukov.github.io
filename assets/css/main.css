@@ -1992,6 +1992,9 @@ input, select, textarea {
 		padding: 8em 0 8em 0;
 		text-align: center;
 	}
+	#portfolio{
+		padding-top: 4em;
+	}
 
 		.wrapper.style1 {
 			background-image: none;
