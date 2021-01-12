@@ -1928,6 +1928,9 @@ input, select, textarea {
 		.box.style2 h3 {
 			margin-bottom: 0.25em;
 		}
+		.box.style2{
+			height: 35em;
+		}
 
 		.box.style2 .image {
 			position: relative;
@@ -1991,9 +1994,6 @@ input, select, textarea {
 		box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.05), inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
 		padding: 8em 0 8em 0;
 		text-align: center;
-	}
-	#portfolio{
-		padding-top: 4em;
 	}
 
 		.wrapper.style1 {
@@ -2445,4 +2445,12 @@ input, select, textarea {
 						margin-top: 0;
 					}
 
+	}
+	#portfolio{
+		padding-top: 4em;
+	}
+	.left{
+		text-align: left;
+		color: #181818;
+		margin-top: 20px;
 	}
