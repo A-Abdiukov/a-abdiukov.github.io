@@ -1930,7 +1930,7 @@ input, select, textarea {
 		}
 		
 		.box.style2{
-			height: 50em;
+			height: 65em;
 		}
 
 
@@ -2454,4 +2454,18 @@ input, select, textarea {
 	.splide__slide img {
 	width : 100%;
 	height: auto;
+}
+
+.tag {
+    background-color: #6c757d;
+    color: #fff;
+    padding: .25em .4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem;
+	text-shadow: none;
 }
