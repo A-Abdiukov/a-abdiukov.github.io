@@ -6,7 +6,7 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+	<link rel="stylesheet" href="assets/splide/dist/css/splide.min.css">
 </head>
 
 
@@ -54,9 +54,37 @@
 			</header>
 			<div class="row">
 
+				
 				<div class="col-4 col-6-medium col-12-small">
 					<article class="box style2">
 						<div id="image-slider" class="splide image featured">
+							<div class="splide__track">
+								<ul class="splide__list">
+									<li class="splide__slide">
+										<img src="images/applications/splitoff.png"
+											alt="splitoff shopping cart application (1st screenshot)" />
+									</li>
+									<li class="splide__slide">
+										<img src="images/applications/splitoff2.png"
+											alt="splitoff shopping cart application (2nd screenshot)" />
+									</li>
+									<li class="splide__slide">
+										<img src="images/applications/splitoff3.PNG"
+											alt="splitoff shopping cart application (3rd screenshot)" />
+									</li>
+								</ul>
+							</div>
+						</div>
+						<h3><a target="_blank" href="https://github.com/A-Abdiukov/htmlcss-layout-hotel-website">Hotel
+								website</a></h3>
+						<p class="left">A hotel website with a nice two-column layout. Has everything a hotel needs - an
+							about us page, contact us page, reviews page, pricing, and more!</p>
+					</article>
+				</div>
+				
+				<div class="col-4 col-6-medium col-12-small">
+					<article class="box style2">
+						<div id="image-slider2" class="splide image featured">
 							<div class="splide__track">
 								<ul class="splide__list">
 									<li class="splide__slide">
@@ -78,7 +106,7 @@
 
 				<div class="col-4 col-6-medium col-12-small">
 					<article class="box style2">
-						<div id="image-slider2" class="splide image featured">
+						<div id="image-slider3" class="splide image featured">
 							<div class="splide__track">
 								<ul class="splide__list">
 									<li class="splide__slide">
@@ -108,7 +136,7 @@
 
 				<div class="col-4 col-6-medium col-12-small">
 					<article class="box style2">
-						<div id="image-slider3" class="splide image featured">
+						<div id="image-slider4" class="splide image featured">
 							<div class="splide__track">
 								<ul class="splide__list">
 									<li class="splide__slide">
@@ -135,33 +163,6 @@
 						</h3>
 						<p class="left">C# application w/ GUI that retrieves employee hours worked from the CSV file and
 							then uses it to calculate the taxes for each employee depending on the employee visa. </p>
-					</article>
-				</div>
-
-				<div class="col-4 col-6-medium col-12-small">
-					<article class="box style2">
-						<div id="image-slider4" class="splide image featured">
-							<div class="splide__track">
-								<ul class="splide__list">
-									<li class="splide__slide">
-										<img src="images/applications/splitoff.png"
-											alt="splitoff shopping cart application (1st screenshot)" />
-									</li>
-									<li class="splide__slide">
-										<img src="images/applications/splitoff2.png"
-											alt="splitoff shopping cart application (2nd screenshot)" />
-									</li>
-									<li class="splide__slide">
-										<img src="images/applications/splitoff3.PNG"
-											alt="splitoff shopping cart application (3rd screenshot)" />
-									</li>
-								</ul>
-							</div>
-						</div>
-						<h3><a target="_blank" href="https://github.com/A-Abdiukov/htmlcss-layout-hotel-website">Hotel
-								website</a></h3>
-						<p class="left">A hotel website with a nice two-column layout. Has everything a hotel needs - an
-							about us page, contact us page, reviews page, pricing, and more!</p>
 					</article>
 				</div>
 
@@ -264,9 +265,10 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+	<script src="assets/splide/dist/js/splide.min.js"></script>
 
 	<script>
+		document.addEventListener( 'DOMContentLoaded', function () {
 		new Splide('#image-slider', {
 			'cover': true,
 			'heightRatio': 1.1,
@@ -291,7 +293,7 @@
 			'cover': true,
 			'heightRatio': 1.1,
 		}).mount();
-
+	} );
 	</script>
 
 </body>
