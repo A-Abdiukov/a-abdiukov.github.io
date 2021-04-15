@@ -2449,3 +2449,9 @@ input, select, textarea {
 		color: #181818;
 		margin-top: 20px;
 	}
+
+
+	.splide__slide img {
+	width : 100%;
+	height: auto;
+}
