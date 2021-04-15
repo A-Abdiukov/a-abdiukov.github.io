@@ -1929,11 +1929,6 @@ input, select, textarea {
 			margin-bottom: 0.25em;
 		}
 		
-		.box.style2{
-			height: 65em;
-		}
-
-
 
 /* Icons */
 
@@ -2214,7 +2209,6 @@ input, select, textarea {
 					height: 24em;
 					margin: 0;
 				}
-
 	}
 
 /* Medium */
@@ -2450,11 +2444,18 @@ input, select, textarea {
 		margin-top: 20px;
 	}
 
-
 	.splide__slide img {
 	width : 100%;
 	height: auto;
 }
+
+#image-slider5 img{
+	width: 65%;
+}
+#image-slider4 img{
+	width: 90%;
+}
+
 
 .tag {
     background-color: #6c757d;
