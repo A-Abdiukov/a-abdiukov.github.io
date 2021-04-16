@@ -135,7 +135,8 @@
 							</div>
 						</div>
 						<h3><a target="_blank" href="https://github.com/A-Abdiukov/chess-with-ai">chess-with-ai</a></h3>
-						<p class="left">Chess game with all chess rules built-in, a nice-looking programmatic GUI, and a competent
+						<p class="left">Chess game with all chess rules built-in, a nice-looking programmatic GUI, and a
+							competent
 							chess AI.
 							User can play against the computer or against another human player.</p>
 						<span class="tag">C#</span>
@@ -256,21 +257,27 @@
 			<header>
 				<h2>Contact form</h2>
 			</header>
+
 			<div class="row">
 				<div class="col-12">
-					<form method="post" action="#">
+					<form id="gform" name="gform" target="hidden_iframe" onsubmit="submitted=true;" method="post"
+						action="https://docs.google.com/forms/d/e/1FAIpQLScvwM0NTkMjc1Of9fX2oSxU71YBSBYQsTz_BZfTQGCxFXg6sA/formResponse?">
 						<div class="row">
 							<div class="col-6 col-12-small">
-								<input type="text" name="name" id="name" placeholder="Your name" />
+								<input for="entry.2005620554" type="text" name="entry.2005620554" id="entry.2005620554"
+									placeholder="Your name" />
 							</div>
 							<div class="col-6 col-12-small">
-								<input type="text" name="email" id="email" placeholder="Your email" />
+								<input for="entry.1045781291" type="text" name="entry.1045781291" id="entry.1045781291"
+									placeholder="Your email" />
 							</div>
 							<div class="col-12">
-								<input type="text" name="subject" id="subject" placeholder="Subject" />
+								<input for="entry.1065046570" type="text" name="entry.1065046570" id="entry.1065046570"
+									placeholder="Subject" />
 							</div>
 							<div class="col-12">
-								<textarea name="message" id="message" placeholder="Message"></textarea>
+								<textarea for="entry.1166974658" name="entry.1166974658" id="entry.1166974658"
+									placeholder="Message"></textarea>
 							</div>
 							<div class="col-12">
 								<ul class="actions">
@@ -279,10 +286,17 @@
 							</div>
 						</div>
 					</form>
+
+
 				</div>
+
 			</div>
 		</div>
 	</article>
+
+	<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){}"></iframe>
+
+
 	<!-- Scripts -->
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/jquery.scrolly.min.js"></script>
@@ -290,8 +304,10 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
-	<script src="assets/splide/dist/js/splide.min.js"></script>
 
+
+	<!-- Slideshow script -->
+	<script src="assets/splide/dist/js/splide.min.js"></script>
 	<script>
 		document.addEventListener('DOMContentLoaded', function () {
 			for (var i = 1; i < 7; i++) {
@@ -303,6 +319,14 @@
 		});
 	</script>
 
+	<!-- Form submission scripts -->
+	<script type="text/javascript">var submitted = false;</script>
+	<script type="text/javascript">
+		$('#gform').on('submit', function (e) {
+			$('#contact *').fadeOut(2000);
+			$('#contact').prepend('<h2>Thank you for getting in touch!</h2><p style="font-size:1.2em; margin-bottom: 0px;">I will get back to you as soon as possible!</p>');
+		})
+	</script>
 </body>
 
 </html>
