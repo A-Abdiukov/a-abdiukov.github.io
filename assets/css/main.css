@@ -1531,7 +1531,8 @@ input, select, textarea {
 		border-radius: 8px;
 		border: solid 1px #ddd;
 		background: #fff;
-		color: #bbb;
+		color: #3e3e3e;
+		font-weight: 600;
 		box-shadow: inset 0px 2px 3px 1px rgba(0, 0, 0, 0.05), 0px 1px 0px 0px rgba(255, 255, 255, 0.025);
 		width: 100%;
 	}
@@ -2467,4 +2468,12 @@ input, select, textarea {
 #applications .col-4{
 background: #fff;
 box-shadow: inset 0px 0px 0px 1px rgb(0 0 0 / 15%), 0px 2px 0px 0px rgb(0 0 0 / 10%);
+}
+
+#sucessSubmit {
+	padding-left:  2em;
+}
+#sucessSubmit p{
+	font-size:1.2em; 
+	margin-bottom: 5px;
 }

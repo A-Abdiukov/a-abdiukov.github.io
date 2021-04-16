@@ -32,7 +32,7 @@
 					<header>
 						<h1>Hi. I'm <strong>Ash Abdiukov</strong>.</h1>
 					</header>
-					<p>I am an <strong>aspiring programmer</strong>.<br />Or in other words, I can turn ☕ into working
+					<p>I am an <strong>aspiring programmer</strong>.<br />Or in other words, I can turn coffee☕ into
 						code. </p>
 					<ul class="social">
 						<li><a target="_blank" href="https://github.com/A-Abdiukov" class="icon brands fa-github"><span
@@ -252,7 +252,7 @@
 	</article>
 
 	<!-- Contact -->
-	<article id="contact" class="wrapper style1">
+	<article id="contact" class="wrapper style1" style="padding-bottom:10px;">
 		<div class="container medium">
 			<header>
 				<h2>Contact form</h2>
@@ -260,7 +260,7 @@
 
 			<div class="row">
 				<div class="col-12">
-					<form id="gform" name="gform" target="hidden_iframe" onsubmit="submitted=true;" method="post"
+					<form id="gform" name="gform" target="hidden_iframe" onsubmit="submitted=true;" method="get"
 						action="https://docs.google.com/forms/d/e/1FAIpQLScvwM0NTkMjc1Of9fX2oSxU71YBSBYQsTz_BZfTQGCxFXg6sA/formResponse?">
 						<div class="row">
 							<div class="col-6 col-12-small">
@@ -294,8 +294,9 @@
 		</div>
 	</article>
 
-	<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){}"></iframe>
-
+	<!-- Form submission sample divs/iframes -->
+	<div id="sucessSubmit"></div>
+	<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
 
 	<!-- Scripts -->
 	<script src="assets/js/jquery.min.js"></script>
@@ -320,11 +321,10 @@
 	</script>
 
 	<!-- Form submission scripts -->
-	<script type="text/javascript">var submitted = false;</script>
 	<script type="text/javascript">
 		$('#gform').on('submit', function (e) {
 			$('#contact *').fadeOut(2000);
-			$('#contact').prepend('<h2>Thank you for getting in touch!</h2><p style="font-size:1.2em; margin-bottom: 0px;">I will get back to you as soon as possible!</p>');
+			$('#sucessSubmit').prepend('<h2>Thank you for getting in touch!</h2><p>I will get back to you as soon as possible!</p>');
 		})
 	</script>
 </body>
