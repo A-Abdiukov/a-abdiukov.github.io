@@ -1911,8 +1911,6 @@ input, select, textarea {
 /* Box */
 
 	.box {
-		background: #fff;
-		box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
 		text-align: center;
 		padding: 2em;
 	}
@@ -2462,4 +2460,11 @@ input, select, textarea {
     vertical-align: baseline;
     border-radius: .25rem;
 	text-shadow: none;
+}
+#applications{
+	margin-left: 0;
+}
+#applications .col-4{
+background: #fff;
+box-shadow: inset 0px 0px 0px 1px rgb(0 0 0 / 15%), 0px 2px 0px 0px rgb(0 0 0 / 10%);
 }
