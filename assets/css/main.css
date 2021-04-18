@@ -2434,19 +2434,18 @@ input, select, textarea {
 					}
 
 	}
-	#portfolio, #contact{
+	#contact{
 		padding-top: 1.2em;	}
+
+	#portfolio{
+	padding-top:3.7em;
+	padding-bottom:2em ;	}
 
 	.left{
 		text-align: left;
 		color: #181818;
 		margin-top: 20px;
 	}
-
-	.splide__slide img {
-	width : 100%;
-	height: auto;
-}
 
 
 .tag {
@@ -2478,8 +2477,6 @@ box-shadow: inset 0px 0px 0px 1px rgb(0 0 0 / 15%), 0px 2px 0px 0px rgb(0 0 0 / 
 	margin-bottom: 5px;
 }
 
-
-
 .myBtn{
 	border-radius: 12px;
 	background-color: white;
@@ -2499,3 +2496,6 @@ a.myBtn{
 	color: white;
 }
 
+li.splide__slide img{
+	margin-left: 0px;
+}

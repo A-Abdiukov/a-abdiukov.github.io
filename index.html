@@ -15,7 +15,7 @@
 	<!-- Nav -->
 	<nav id="nav">
 		<ul class="container">
-			<li><a target="_blank" href="#top">About me</a></li>
+			<li><a target="_blank" href="#top">About</a></li>
 			<li><a target="_blank" href="#portfolio">Portfolio</a></li>
 			<li><a href="#contact">Contact</a></li>
 		</ul>
@@ -46,11 +46,7 @@
 	<!-- Portfolio -->
 	<article id="portfolio" class="wrapper style2">
 		<div class="container">
-			<header>
-				<h2>Here are some of my projects.</h2>
-			</header>
 			<div class="row" id="applications">
-
 				<div class="col-4 col-6-medium col-12-small">
 					<article class="box style2">
 						<div id="image-slider1" class="splide image featured">
@@ -81,6 +77,38 @@
 						<span class="tag">JavaScript</span>
 						<span class="tag">JSON</span>
 						<span class="tag">NPM/Yarn</span>
+				</div>
+
+				<div class="col-4 col-6-medium col-12-small">
+					<article class="box style2">
+						<div id="image-slider2" class="splide image featured">
+							<div class="splide__track">
+								<ul class="splide__list">
+									<li class="splide__slide">
+										<img src="images/applications/chess.png"
+											alt="chess application (1st screenshot)" />
+									</li>
+									<li class="splide__slide">
+										<img src="images/applications/chess2.png"
+											alt="chess application (2nd screenshot)" />
+									</li>
+								</ul>
+							</div>
+						</div>
+						<h3><a target="_blank" href="https://github.com/A-Abdiukov/chess-with-ai">chess-with-ai</a></h3>
+						<div>
+							<a target="_blank" href="https://github.com/A-Abdiukov/chess-with-ai" class="myBtn">View on
+								GitHub</a>
+						</div>
+						<p class="left">Chess game with all chess rules built-in, a nice-looking programmatic GUI, and a
+							competent
+							chess AI.
+							User can play against the computer or against another human player.</p>
+						<span class="tag">C#</span>
+						<span class="tag">WinForms</span>
+						<span class="tag">Responsive GUI</span>
+						<span class="tag">Artificial Intelligence</span>
+					</article>
 				</div>
 
 				<div class="col-4 col-6-medium col-12-small">
@@ -119,39 +147,6 @@
 						<span class="tag">WPF</span>
 						<span class="tag">MicrosoftSQL</span>
 						<span class="tag">3rd party API</span>
-
-					</article>
-				</div>
-
-				<div class="col-4 col-6-medium col-12-small">
-					<article class="box style2">
-						<div id="image-slider2" class="splide image featured">
-							<div class="splide__track">
-								<ul class="splide__list">
-									<li class="splide__slide">
-										<img src="images/applications/chess.png"
-											alt="chess application (1st screenshot)" />
-									</li>
-									<li class="splide__slide">
-										<img src="images/applications/chess2.png"
-											alt="chess application (2nd screenshot)" />
-									</li>
-								</ul>
-							</div>
-						</div>
-						<h3><a target="_blank" href="https://github.com/A-Abdiukov/chess-with-ai">chess-with-ai</a></h3>
-						<div>
-							<a target="_blank" href="https://github.com/A-Abdiukov/chess-with-ai" class="myBtn">View on
-								GitHub</a>
-						</div>
-						<p class="left">Chess game with all chess rules built-in, a nice-looking programmatic GUI, and a
-							competent
-							chess AI.
-							User can play against the computer or against another human player.</p>
-						<span class="tag">C#</span>
-						<span class="tag">WinForms</span>
-						<span class="tag">Responsive GUI</span>
-						<span class="tag">Artificial Intelligence</span>
 					</article>
 				</div>
 
@@ -338,6 +333,8 @@
 				var imageSliderName = '#image-slider' + i;
 				new Splide(imageSliderName, {
 					'rewind': true,
+					height: '28rem',
+					type  : 'fade',
 				}).mount();
 			}
 		});
