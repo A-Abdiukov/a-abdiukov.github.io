@@ -2477,7 +2477,11 @@ box-shadow: inset 0px 0px 0px 1px rgb(0 0 0 / 15%), 0px 2px 0px 0px rgb(0 0 0 / 
 	margin-bottom: 5px;
 }
 
-.myBtn{
+li.splide__slide img{
+	margin-left: 0px;
+}
+
+.btnGreen{
 	border-radius: 12px;
 	background-color: white;
 	color: black;
@@ -2486,16 +2490,34 @@ box-shadow: inset 0px 0px 0px 1px rgb(0 0 0 / 15%), 0px 2px 0px 0px rgb(0 0 0 / 
 	display: inline-block;
 	padding:0.4em;
 	font-size: 0.8em;
+	text-shadow: none;
 }
-a.myBtn{
+a.btnGreen{
 	text-decoration: none;
 	color:black !important;
 }
-.myBtn:hover{
+.btnGreen:hover{
 	background-color: #4CAF50; /* Green */
-	color: white;
+	color: white !important;
 }
 
-li.splide__slide img{
-	margin-left: 0px;
+
+.btnBlue{
+	border-radius: 12px;
+	background-color: white;
+	color: black;
+	border: 2px solid #008CBA;
+	transition-duration: 0.4s;
+	display: inline-block;
+	padding:0.4em;
+	font-size: 0.8em;
+	text-shadow: none;
+}
+a.btnBlue{
+	text-decoration: none;
+	color:black !important;
+}
+.btnBlue:hover{
+	background-color: #008CBA; /* Blue */
+	color: white !important;
 }
