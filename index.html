@@ -285,10 +285,9 @@
 			<header>
 				<h2>Contact form</h2>
 			</header>
-
 			<div class="row">
 				<div class="col-12">
-					<form id="gform" name="gform" target="hidden_iframe" onsubmit="submitted=true;" method="get"
+					<form id="gform" name="gform" target="hidden_iframe" method="get"
 						action="https://docs.google.com/forms/d/e/1FAIpQLScvwM0NTkMjc1Of9fX2oSxU71YBSBYQsTz_BZfTQGCxFXg6sA/formResponse?">
 						<div class="row">
 							<div class="col-6 col-12-small">
@@ -314,10 +313,7 @@
 							</div>
 						</div>
 					</form>
-
-
 				</div>
-
 			</div>
 		</div>
 	</article>
@@ -334,7 +330,6 @@
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
 
-
 	<!-- Slideshow script -->
 	<script src="assets/splide/dist/js/splide.min.js"></script>
 	<script>
@@ -349,7 +344,6 @@
 			}
 		});
 	</script>
-
 	<!-- Form submission scripts -->
 	<script type="text/javascript">
 		$('#gform').on('submit', function (e) {
@@ -360,7 +354,8 @@
 	<script type="text/javascript">
 		$(document).on("keydown", ":input:not(textarea)", function (event) {
 			return event.key != "Enter";
-		});</script>
+		});
+	</script>
 </body>
 
 </html>
